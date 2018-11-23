@@ -111,7 +111,81 @@ private double amountFor(Rental each) {
    
    3,frequentRenterPoints: 和totalAmount一样的处理。
    
- * 目前
+ * 经过我们的调整，目前Customer的statement的方法现在是这样的。
+ 
+ ```java
+public String statement() {
+        String result = "Rental Record for " + getName() + "\n";
+        for (Rental each :rentals) {
+            result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each.getCharge()) + "\n";
+        }
+        // add footer lines
+        result += "Amount owed is " + String.valueOf(getTotalAmount()) + "\n";
+        result += "You earned " + String.valueOf(getTotalFrequentRenterPoints()) + " frequent renter points";
+        return result;
+    }
 
-* 修改之后我们的类图发生了变化
-![类图V1](doc/classV1.png)
+    private int getTotalFrequentRenterPoints(){
+        int totalFrequentRenterPoints = 0;
+        for (Rental each :rentals) {
+            totalFrequentRenterPoints +=  each.getFrequentRenterPoints();
+        }
+        return totalFrequentRenterPoints;
+
+    }
+
+
+    private double  getTotalAmount()
+    {
+        double totalAmount = 0;
+        for (Rental each :rentals) {
+            totalAmount +=  each.getCharge();
+        }
+        return totalAmount;
+    }
+```
+* Rental的getCharge方法是这样的
+
+```java
+public double getCharge() {
+    double thisAmount = 0;
+    switch (getMovie().getPriceCode()) {
+        case Movie.REGULAR:
+            thisAmount += 2;
+            if (getDaysRented() > 2) {
+                thisAmount += (getDaysRented() - 2) * 1.5;
+            }
+            break;
+        case Movie.CHILDRENS:
+            thisAmount += getDaysRented() * 3;
+            break;
+        case Movie.NEW_RELEASE:
+            thisAmount += 1.5;
+            if (getDaysRented() > 3) {
+                thisAmount += (getDaysRented() - 3) * 1.5;
+            }
+            break;
+        default:
+            break;
+    }
+    return thisAmount;
+}
+```
+
+* Rental的getFrequentRenterPoints方法是这这样的
+```java
+public int getFrequentRenterPoints() {
+    if ((getMovie().getPriceCode() == Movie.NEW_RELEASE) && getDaysRented() > 1) {
+       return 2;
+    }
+    return 1;
+}
+```
+* 这时候我们可以很方便的应对客户提出的"html格式输出详单"，其中statement里面的计算逻辑可以全部复用。
+
+好了接下来，我们要去应对另外一个需求了，客户要修改影片分类，与之相应的积分计算规则也会发生改变。为了
+应对这个变化，我们现在需要进入费用计算，积分计算方法，把因条件而异的代码替换掉。
+
+让我们开始进入V3吧。
+
+

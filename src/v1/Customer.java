@@ -27,7 +27,6 @@ public class Customer {
         String result = "Rental Record for " + getName() + "\n";
         for (Rental each :rentals) {
             result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each.getCharge()) + "\n";
-
         }
         // add footer lines
         result += "Amount owed is " + String.valueOf(getTotalAmount()) + "\n";
