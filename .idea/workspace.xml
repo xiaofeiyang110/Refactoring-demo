@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef6d141a-bcaa-4c41-85dd-84d7c58eca95" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/seq_v0.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/seq_v2.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/source/classV1.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/classV2.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/classV2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/classV2.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/classV2.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/class.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/source/class.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/classV1.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/classV1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/classV2.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/source/classV2.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/seq_v0.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/source/seq_v0.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/seq_v2.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/source/seq_v2.puml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,10 +26,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="500">
-                <caret line="269" column="2" selection-start-line="269" selection-start-column="2" selection-end-line="269" selection-end-column="2" />
+              <first_editor relative-caret-position="315">
+                <caret line="268" lean-forward="true" selection-start-line="268" selection-end-line="268" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -37,9 +48,18 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="seq_v2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/seq_v2.png">
+      <file leaf-file-name="classV2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/classV2.png">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="class.puml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/source/class.puml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="class.png" pinned="false" current-in-tab="false">
@@ -47,52 +67,26 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="classV2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/classV2.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="seq_v2.puml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/seq_v2.puml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="24" selection-end-line="26" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="classV2.puml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/classV2.puml">
+        <entry file="file://$PROJECT_DIR$/doc/source/classV2.puml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="260">
+              <caret line="25" lean-forward="true" selection-end-line="55" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="classV1.puml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/source/classV1.puml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewReleasPrice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/v2/NewReleasPrice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-              <folding>
-                <element signature="e#459#460#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="seq_v0.puml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/seq_v0.puml">
+        <entry file="file://$PROJECT_DIR$/doc/source/seq_v0.puml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
@@ -100,14 +94,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="classV1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/classV1.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="UML Class" />
         <option value="Class" />
         <option value="UML Sequence" />
+        <option value="UML Class" />
       </list>
     </option>
   </component>
@@ -148,6 +147,7 @@
         <option value="$PROJECT_DIR$/doc/vo.puml" />
         <option value="$PROJECT_DIR$/doc/seq_v0.puml" />
         <option value="$PROJECT_DIR$/doc/classV2.puml" />
+        <option value="$PROJECT_DIR$/doc/source/classV1.puml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
@@ -187,6 +187,12 @@
             <path>
               <item name="Refactoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="Refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Refactoring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,6 +219,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/source" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="v0" />
     </key>
@@ -332,18 +341,18 @@
       <workItem from="1543050077895" duration="1592000" />
       <workItem from="1543052024932" duration="193000" />
       <workItem from="1543052251017" duration="206000" />
-      <workItem from="1543052476830" duration="6775000" />
+      <workItem from="1543052476830" duration="7399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28915000" />
+    <option name="totallyTimeSpent" value="29539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="PlantUML" order="3" weight="0.15164521" />
+      <window_info anchor="right" id="PlantUML" order="3" weight="0.5386266" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32848486" />
@@ -358,7 +367,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.32" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21173105" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -381,23 +390,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/v2/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/v2/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/v2/Rental.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -760,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/class.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/v1/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -805,53 +790,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/class.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/seq_v0.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/seq_v2.puml">
+    <entry file="file://$PROJECT_DIR$/doc/source/seq_v2.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="24" selection-end-line="26" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="500">
-            <caret line="269" column="2" selection-start-line="269" selection-start-column="2" selection-end-line="269" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/doc/seq_v2.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/seq_vo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/seq_v2.png">
+    <entry file="file://$PROJECT_DIR$/doc/source/class.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/source/seq_v0.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/source/classV2.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" lean-forward="true" selection-end-line="55" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/source/classV1.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/classV1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/classV2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/classV2.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+    <entry file="file://$PROJECT_DIR$/doc/class.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="268" lean-forward="true" selection-start-line="268" selection-end-line="268" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>

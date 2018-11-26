@@ -243,7 +243,7 @@ public int getFrequentRenterPoints(int daysRented)
 这句话，我明白了，可是为什么不能这么干，我不明白），按照书里的说法，我们引入State模式。运行之后，
 新的类图看起来是这样的。
 
-![](doc/classV2.png)
+![](doc/classV1.png)
 
 为了引入Stats模式，需要用到三个重构手法。
 * 运用Replace Type Code with State/Strategy，将与类型相关到行为搬移至State模式内。

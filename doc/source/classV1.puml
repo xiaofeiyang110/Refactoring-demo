@@ -1,0 +1,36 @@
+@startuml
+
+    class Movie {
+        double getChange(days:int)
+    }
+    note bottom of  Movie : return price.getCharge
+
+    class Price {
+        getCharge(days:int)
+    }
+
+    class RegularPrice {
+        getCharge(days:int)
+    }
+
+    class ChildrensPrice {
+         getCharge(days:int)
+    }
+
+    class NewReleasePrice {
+         getCharge(days:int)
+    }
+
+
+
+
+
+    Movie  -right-> Price
+    Price <|-- RegularPrice
+    Price <|-- ChildrensPrice
+    Price <|-- NewReleasePrice
+
+
+
+
+    @end
