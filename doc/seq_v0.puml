@@ -1,0 +1,17 @@
+@startuml
+actor User
+User -> aCustomer: statement
+activate aCustomer
+aCustomer -> aCustomer: *[for all rentals]
+activate aCustomer
+aCustomer -> aRental : getMovie
+aCustomer -> aMovie : getPriceCode
+aCustomer -> aRental : getDaysRented
+deactivate aCustomer
+
+deactivate aCustomer
+
+
+
+
+@enduml

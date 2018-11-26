@@ -1,0 +1,27 @@
+@startuml
+actor User
+User -> aCustomer: statement
+aCustomer -> aCustomer: getTotalCharge
+activate aCustomer
+aCustomer -> aRental : *[for all rentals] getCharge()
+activate aRental
+aRental -> aMovie : getCharge(days)
+deactivate aRental
+activate aMovie
+aMovie -> aPrice: getCharge(days)
+deactivate aMovie
+deactivate aCustomer
+
+
+aCustomer -> aCustomer: getFrequentRenterPoints
+activate aCustomer
+aCustomer -> aRental : *[for all rentals] getFrequentRenterPoints()
+activate aRental
+aRental -> aMovie : getFrequentRenterPoints(days)
+deactivate aRental
+activate aMovie
+aMovie -> aPrice: getFrequentRenterPoints(days)
+deactivate aMovie
+deactivate aCustomer
+
+@enduml

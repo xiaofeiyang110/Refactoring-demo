@@ -1,18 +1,56 @@
 @startuml
 
     class Movie {
-        getCharge
+        title : String
+        double getChange(days:int)
+        getFrequentRenterPoints(days:int)
     }
-    note left: return price.getCharge()
 
     class Price {
-        getCharge
+        getCharge(days:int)
+        getFrequentRenterPoints(days:int)
     }
+
+    class RegularPrice {
+        getCharge(days:int)
+    }
+
+    class ChildrensPrice {
+         getCharge(days:int)
+    }
+
+    class NewReleasePrice {
+         getCharge(days:int)
+         getFrequentRenterPoints(days:int)
+    }
+
+    class Rental {
+        daysRented: int
+
+        double getCharge()
+
+        int getFrequentRenterPoints()
+    }
+
+    class Customer {
+        name: String
+
+        void statement()
+
+        void htmlStatement()
+
+        double getTotalCharge()
+
+        int getTotalFrequentRenterPoints()
+    }
+
 
     Movie  -right-> Price
     Price <|-- RegularPrice
     Price <|-- ChildrensPrice
     Price <|-- NewReleasePrice
+    Rental -up->Movie
+    Customer -left-> Rental
 
 
     @end

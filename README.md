@@ -257,3 +257,19 @@ public int getFrequentRenterPoints(int daysRented)
     - 首先是getCharge(),取出一个case，在相应的类中建立一个覆盖函数。处理完成，修改price中的getCharge为抽象方法。
     
 * 同样的方法处理getFrequentRenterPoints。
+
+截止目前，我们完成了一个小小的重构，让我们来看一下。重构前后的流程图，类图
+
+* vo
+
+类图
+![class](doc/class.png)
+流程图：
+![](doc/seq_vo.png)
+
+* v2
+
+类图
+![class](doc/classV2.png)
+流程图：
+![](doc/seq_v2.png)
