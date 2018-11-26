@@ -1,0 +1,18 @@
+@startuml
+
+    class Movie {
+        getCharge
+    }
+    note left: return price.getCharge()
+
+    class Price {
+        getCharge
+    }
+
+    Movie  -right-> Price
+    Price <|-- RegularPrice
+    Price <|-- ChildrensPrice
+    Price <|-- NewReleasePrice
+
+
+    @end

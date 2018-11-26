@@ -1,0 +1,17 @@
+@startuml
+
+class Customer {
+  String statement()
+}
+
+class Rental {
+   daysRented : int
+}
+
+class Movie {
+    priceCode : int
+}
+
+Customer "1" -left-> "*" Rental
+Rental "*" -left-> "1" Movie
+@end

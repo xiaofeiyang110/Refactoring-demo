@@ -196,6 +196,64 @@ public int getFrequentRenterPoints() {
 因为本系统可能发生的变化是加入新影片类型，这种变化带有不稳定性。如果影片类型有变化，我们希望尽量控制它照成的影响。
 所以选中在Movie对象内计算费用。
 
+调整过的Movie中的计费方法getCharge
 
+```java
+public double getCharge(int daysRented)
+{
+    double result = 0;
+    switch (getPriceCode()) {
+        case Movie.REGULAR:
+            result += 2;
+            if (daysRented > 2) {
+                result += (daysRented - 2) * 1.5;
+            }
+            break;
+        case Movie.CHILDRENS:
+            result += daysRented * 3;
+            break;
+        case Movie.NEW_RELEASE:
+            result += 1.5;
+            if (daysRented > 3) {
+                result += (daysRented - 3) * 1.5;
+            }
+            break;
+        default:
+            break;
+    }
+    return result;
+}
 
+```
 
+同样的，调整过的Movie中计算积分的方法
+
+```java
+public int getFrequentRenterPoints(int daysRented)
+{
+    if (getPriceCode() == Movie.NEW_RELEASE && daysRented > 1) {
+        return 2;
+    }
+    return 1;
+}
+```
+* 看看Movie，我们有数种影片类型，它们以不同的方式回答相同的问题。这听起来很像子类的工作。
+我们可以建立Movie的三个子类，每个都有自己的计费法。可以使用多态来取代switch.（按照书中的说法，
+"不能这么干，一部影片可以在生命周期内修改自己的分类，一个对象却不能在生命周期内修改自己所属的类"，
+这句话，我明白了，可是为什么不能这么干，我不明白），按照书里的说法，我们引入State模式。运行之后，
+新的类图看起来是这样的。
+
+![](doc/classV2.png)
+
+为了引入Stats模式，需要用到三个重构手法。
+* 运用Replace Type Code with State/Strategy，将与类型相关到行为搬移至State模式内。
+1，针对类型代码，使用Self Encapsulate Field，确保任何时候都通过取值函数和设值函数访问类型代码。
+    - 修改Movie的构造器，使用setPriceCode(priceCode);
+    - 创建一个Price类，并提供类型相关的行为。在Price类中加入一个抽象函数，并在所有子类加上对应的具体函数。
+    - 修改Movie类的"价格代号"访问函数，让它们使用新类。这意味着，必须在Movie内保存一个Price对象。
+* 运用Move Method将switch语句移到Price类。
+    
+* 运用Replace Conditional with Polymorphism去掉switch语句。
+    - 首先是getCharge(),取出一个case，在相应的类中建立一个覆盖函数。处理完成，修改price中的getCharge为抽象方法。
+    
+* 同样的方法处理getFrequentRenterPoints。
