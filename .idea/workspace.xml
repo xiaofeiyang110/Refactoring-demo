@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef6d141a-bcaa-4c41-85dd-84d7c58eca95" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/source/classV1.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/class.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/source/class.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/classV1.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/classV1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/classV2.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/source/classV2.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/seq_v0.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/source/seq_v0.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/seq_v2.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/source/seq_v2.puml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -178,28 +171,6 @@
             <path>
               <item name="Refactoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="Refactoring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Refactoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,12 +312,12 @@
       <workItem from="1543050077895" duration="1592000" />
       <workItem from="1543052024932" duration="193000" />
       <workItem from="1543052251017" duration="206000" />
-      <workItem from="1543052476830" duration="7399000" />
+      <workItem from="1543052476830" duration="8305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29539000" />
+    <option name="totallyTimeSpent" value="30445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -853,7 +824,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
