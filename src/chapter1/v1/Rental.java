@@ -1,5 +1,4 @@
-package v1;
-import v1.Movie;
+package chapter1.v1;
 
 public class Rental {
 

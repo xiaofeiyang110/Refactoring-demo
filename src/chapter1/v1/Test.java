@@ -1,8 +1,4 @@
-package v2;
-
-import v2.Movie;
-import v2.Rental;
-import  v2.Customer;
+package chapter1.v1;
 
 public class Test {
 

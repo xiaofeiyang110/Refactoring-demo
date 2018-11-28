@@ -1,7 +1,4 @@
-package v0;
-
-import v0.Customer;
-import v0.Movie;
+package chapter1.v2;
 
 public class Test {
 
@@ -17,6 +14,7 @@ public class Test {
         c.addRental(r1);
         c.addRental(r2);
         String res = c.statement();
+
         System.out.print(res);
     }
 }
