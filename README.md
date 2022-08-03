@@ -13,7 +13,7 @@
   
 ##### 系统类图
 
-![类图](doc/class.png)
+![类图](src/chapter1/doc/class.png)
 
 ##### 基础版本代码 v0
 
@@ -243,7 +243,7 @@ public int getFrequentRenterPoints(int daysRented)
 这句话，我明白了，可是为什么不能这么干，我不明白），按照书里的说法，我们引入State模式。运行之后，
 新的类图看起来是这样的。
 
-![](doc/classV1.png)
+![](src/chapter1/doc/classV1.png)
 
 为了引入Stats模式，需要用到三个重构手法。
 * 运用Replace Type Code with State/Strategy，将与类型相关到行为搬移至State模式内。
@@ -263,13 +263,13 @@ public int getFrequentRenterPoints(int daysRented)
 * vo
 
 类图
-![class](doc/class.png)
+![class](src/chapter1/doc/class.png)
 流程图：
 ![](doc/seq_vo.png)
 
 * v2
 
 类图
-![class](doc/classV2.png)
+![class](src/chapter1/doc/classV2.png)
 流程图：
 ![](doc/seq_v2.png)
