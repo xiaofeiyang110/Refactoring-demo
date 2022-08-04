@@ -35,7 +35,7 @@ public class Customer {
                         thisAmount += (each.getDaysRented() - 2) * 1.5;
                     }
                     break;
-                case Movie.CHILDRENS:
+                case Movie.CHILDREN:
                     thisAmount += each.getDaysRented() * 3;
                     break;
                 case Movie.NEW_RELEASE:

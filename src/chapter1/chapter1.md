@@ -271,15 +271,31 @@ public int getFrequentRenterPoints(int daysRented)
     
 * 运用Replace Conditional with Polymorphism去掉switch语句。
     - 首先是getCharge(),取出一个case，在相应的类中建立一个覆盖函数。处理完成，修改price中的getCharge为抽象方法。
+
+* 概括起来
+  * 变化的是Move的价格和积分的计算。所有我们新建一个price抽象类，定义能力。定义不同的子类实现完成价格和积分的计算
+  * Movie创建的时候，实例化不同的price子类
+    * movie添加price属性。
+    * setPriceCode时实例化price
+  * 消除switch语句 
+    * 把计算价格的代码从movie迁移到Price
+    * 把每个case语句实例化成一个具体的子类
+    * 所有的子类完成之后，修改price的方法为抽象方法
     
 * 同样的方法处理getFrequentRenterPoints。
 
-截止目前，我们完成了一个小小的重构，让我们来看一下。重构前后的流程图，类图
+截止目前，我们完成了一个小小的重构。让我们用之前的标准再来审视一下v2版本的代码
+> customer的statement只关心打印相关代码，计算的逻辑被移到更其他地方。职责单一了<br>
+> 因为price的出现，修改价格和积分的计算变的简单和方便扩展。另外因为计算积分和价格的代码抽离了，扩展一种新的打印方式变得简单
+> 单元测试是不是更容易了，每个价格的子类都比较简单，很容易全面覆盖
+
+* 重构前后的流程图，类图
 
 * vo
 
 类图
 ![class](doc/class.png)
+<br>
 流程图：
 ![](../../doc/seq_vo.png)
 
@@ -287,5 +303,6 @@ public int getFrequentRenterPoints(int daysRented)
 
 类图
 ![class](doc/classV2.png)
+<br>
 流程图：
 ![](../../doc/seq_v2.png)

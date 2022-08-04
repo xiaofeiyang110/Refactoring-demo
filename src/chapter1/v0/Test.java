@@ -4,7 +4,7 @@ public class Test {
 
     public static void  main(String[] args)
     {
-        Movie m1 = new Movie("儿童1",Movie.CHILDRENS);
+        Movie m1 = new Movie("儿童1",Movie.CHILDREN);
         Movie m2 = new Movie("新片1",Movie.NEW_RELEASE);
 
         Rental r1 = new Rental(m1,1);
