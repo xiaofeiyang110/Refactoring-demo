@@ -19,6 +19,132 @@
 ![类图](doc/class.png)
 
 ##### 基础版本代码 v0
+* v0代码如下
+```
+package chapter1.v0;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Customer {
+    private String name;
+    private List<Rental> rentals = new ArrayList<Rental>();
+
+    public Customer(String name) {
+        this.name = name;
+    }
+
+
+    public  void addRental(Rental rental){
+        rentals.add(rental);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String statement() {
+        double totalAmount = 0;
+        int frequentRenterPoints = 0;
+
+        String result = "Rental Record for " + getName() + "\n";
+        for (Rental each :rentals) {
+            double thisAmount = 0;
+            switch (each.getMovie().getPriceCode()) {
+                case Movie.REGULAR:
+                    thisAmount += 2;
+                    if (each.getDaysRented() > 2) {
+                        thisAmount += (each.getDaysRented() - 2) * 1.5;
+                    }
+                    break;
+                case Movie.CHILDREN:
+                    thisAmount += each.getDaysRented() * 3;
+                    break;
+                case Movie.NEW_RELEASE:
+                    thisAmount += 1.5;
+                    if (each.getDaysRented() > 3) {
+                        thisAmount += (each.getDaysRented() - 3) * 1.5;
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+            // add grequent renter points
+            frequentRenterPoints++;
+            // add bonus for a two day new release rental
+            if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1) {
+                frequentRenterPoints++;
+            }
+
+            // show fingures for this rental
+            result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) + "\n";
+            totalAmount += thisAmount;
+        }
+
+        // add footer lines
+        result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
+        result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points";
+        return result;
+    }
+}
+
+
+package chapter1.v0;
+
+public class Movie {
+    public  static final int CHILDREN = 2;
+    public static final int REGULAR = 0;
+    public static final int NEW_RELEASE = 1;
+
+    private String title;
+    private int priceCode;
+
+    public Movie(String title, int priceCode) {
+        this.title = title;
+        this.priceCode = priceCode;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getPriceCode() {
+        return priceCode;
+    }
+
+    public void setPriceCode(int priceCode) {
+        this.priceCode = priceCode;
+    }
+}
+
+package chapter1.v0;
+
+public class Rental {
+
+    private Movie movie;
+    private int daysRented;
+
+    public Rental(Movie movie, int daysRented) {
+        this.movie = movie;
+        this.daysRented = daysRented;
+    }
+
+    public Movie getMovie() {
+        return movie;
+    }
+
+    public int getDaysRented() {
+        return daysRented;
+    }
+}
+
+```
 
 * 代码可以正常运行，看起来一切都ok。可是开发中唯一不变的就是变化。终于变化来了。
 
